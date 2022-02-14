@@ -22,9 +22,9 @@ app.use(
 );
 
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '@kasatana1234',
+  host: 'db.yoshida-home',
+  user: 'ec2-user',
+  password: 'qazxsw1234',
   database: 'typetest',
 });
 
