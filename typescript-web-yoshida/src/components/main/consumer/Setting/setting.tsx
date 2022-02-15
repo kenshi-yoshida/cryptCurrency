@@ -10,7 +10,7 @@ import { LogoutAction } from '../Login/action';
 
 async function acyncDeleteUser(userID: number, dispatch: Dispatch<any>, navigation: NavigateFunction) {
   await axios
-    .post('http://localhost:4000/userinfo/delete', { userID: userID })
+    .post('http://www.yoshida-intro-sample.tk:4000/userinfo/delete', { userID: userID })
     .then(() => {
       alert('退会が完了しました。');
       dispatch(LogoutAction());

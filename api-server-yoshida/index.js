@@ -25,7 +25,8 @@ const connection = mysql.createConnection({
   host: 'db.yoshida-home',
   user: 'ec2-user',
   password: 'qazxsw1234',
-  database: 'typetest',
+  port: '3306',
+  database: 'typetest'
 });
 
 //サーバー外からのアクセスを許可する　CORS対策設定

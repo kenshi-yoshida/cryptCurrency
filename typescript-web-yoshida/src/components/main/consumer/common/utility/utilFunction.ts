@@ -32,7 +32,7 @@ export function calcSumPrice(data: any, only: 'sum' | 'other'): number {
 //通貨価格取得処理
 export async function getCurrencyPrice(currencyName: string) {
   const url = await axios
-    .post('http://localhost:4000/get/url', {
+    .post('http://www.yoshida-intro-sample.tk:4000/get/url', {
       currencyName: currencyName,
     })
     .then((res) => {

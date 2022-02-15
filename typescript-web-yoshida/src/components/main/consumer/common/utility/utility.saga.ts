@@ -33,7 +33,7 @@ function* holdDetailCurrencyIint() {
 
   //保持通貨情報を取得
   const datas: [] = yield axios
-    .post(`http://localhost:4000/portforioSettingInit`, {
+    .post(`http://www.yoshida-intro-sample.tk:4000/portforioSettingInit`, {
       userID: state.userID,
     })
     .then((res) => {

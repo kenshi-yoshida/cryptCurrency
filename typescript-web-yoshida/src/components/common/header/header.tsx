@@ -8,7 +8,7 @@ import { Link, List, TitleText, Ul } from '../../parts';
 import { PagingType } from '../enumType';
 //ログイン押下時の非同期処理
 async function asyncLogin(dispatch: Dispatch<any>) {
-  await axios.get(`http://localhost:4000/check/login`).then((result) => {
+  await axios.get(`http://www.yoshida-intro-sample.tk:4000/check/login`).then((result) => {
     if (!result.data) {
       const resultData = result.data[0];
       dispatch(LoginAction(resultData));
@@ -17,7 +17,7 @@ async function asyncLogin(dispatch: Dispatch<any>) {
 }
 
 async function asyncLogout(navigate: NavigateFunction, dispatch: Dispatch<any>) {
-  await axios.get('http://localhost:4000/logout').then(() => {
+  await axios.get('http://www.yoshida-intro-sample.tk:4000/logout').then(() => {
     dispatch(LogoutAction());
     alert('ログアウトしました');
     navigate(PagingType.ROOT);

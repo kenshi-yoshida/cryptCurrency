@@ -10,7 +10,7 @@ import { UserRegistForm } from '../common/usreRegistForm';
 //新規ユーザーをDB保存する処理
 async function saveUser(name: string, email: string, tell: number, password: string, navigate: NavigateFunction) {
   await axios
-    .post(`http://localhost:4000/userinfo/add/user`, {
+    .post(`http://www.yoshida-intro-sample.tk:4000/userinfo/add/user`, {
       name: name,
       email: email,
       tell: tell,

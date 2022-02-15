@@ -18,7 +18,7 @@ async function saveUser(
   dispatch: Dispatch<any>
 ) {
   await axios
-    .post(`http://localhost:4000/userinfo/edit`, {
+    .post(`http://www.yoshida-intro-sample.tk:4000/userinfo/edit`, {
       name: name,
       email: email,
       tell: tell,

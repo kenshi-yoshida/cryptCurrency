@@ -21,7 +21,7 @@ import { LoginAction } from './action';
 //ログイン押下時の非同期処理
 async function asyncLogin(email: string, password: string, navigate: NavigateFunction, dispatch: Dispatch<any>) {
   await axios
-    .post(`http://localhost:4000/login`, {
+    .post(`http://www.yoshida-intro-sample.tk:4000/login`, {
       email: email,
       password: password,
     })
